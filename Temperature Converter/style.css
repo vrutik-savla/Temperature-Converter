@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+  height: 100vh;
+  max-width: 100vw;
+  background-image: linear-gradient(to bottom right, #3bc9db, #e3fafc);
+  color: #222;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-1 {
+  width: 22rem;
+  position: absolute;
+  top: 9rem;
+  left: 4rem;
+}
+.image-2 {
+  width: 37rem;
+  position: absolute;
+  top: -10rem;
+  right: 8rem;
+  transform: rotateZ(34deg);
+  z-index: -1;
+}
+
+.header {
+  margin: 6.4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h1-icon {
+  height: 7.2rem;
+  width: 7.2rem;
+  color: #222;
+}
+h1 {
+  font-size: 7.2rem;
+  text-align: center;
+}
+
+.container {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.tempConverter {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  margin: 0 25.6rem;
+
+  border: #222 solid 2px;
+  border-radius: 3.2rem;
+  overflow: hidden;
+}
+
+.form {
+  flex: 1 0 50%;
+
+  padding: 4.8rem;
+  background-color: #e3fafc;
+  border-right: #222 solid 1px;
+}
+.form label {
+  display: block;
+  font-size: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.input-temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  margin-bottom: 1.6rem;
+}
+.form input,
+.convert-to-unit {
+  width: 80%;
+  font-size: 1.6rem;
+  border-top-left-radius: 3.2rem;
+  border-bottom-left-radius: 3.2rem;
+  padding: 0.6rem 1.2rem;
+  border: #222 solid 1px;
+  font-family: inherit;
+}
+.input-temp-unit {
+  width: 20%;
+  border-top-right-radius: 3.2rem;
+  border-bottom-right-radius: 3.2rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.6rem;
+  border: #222 solid 1px;
+  border-left: none;
+  font-family: inherit;
+}
+
+.convert-to-unit {
+  border-radius: 3.2rem;
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+}
+
+.btn-submit {
+  display: block;
+  text-align: center;
+  margin: 4rem auto 0 auto;
+  width: 75%;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3.2rem;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 2rem;
+  border: #222 solid 2px;
+}
+.btn-submit:hover {
+  background-color: #fff;
+  color: #222;
+  border: #222 solid 2px;
+  transition: all 0.3s;
+}
+
+.result {
+  flex: 0 0 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #22b8cf;
+  padding: 4.8rem;
+  font-size: 7rem;
+  color: #111;
+  border-left: #222 solid 1px;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgb(51, 51, 51, 0.5);
+  z-index: 1;
+}

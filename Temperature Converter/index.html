@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-B" />
+    <meta http-equi="X-UA-Compatible" content="IE-edge" />
+    <meta
+      name="description"
+      content="Temperature converter is static webpage which converts temperature with different units."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <header class="header">
+      <ion-icon class="h1-icon" name="thermometer-outline"></ion-icon>
+      <h1>Temperature Converter</h1>
+    </header>
+
+    <section class="container">
+      <div class="tempConverter">
+        <form class="form">
+          <label class="label-input-temp">From</label>
+          <div class="input-temp">
+            <input
+              class="input-temp-value"
+              name="input-temp"
+              type="number"
+              placeholder="E.g: 30"
+              required
+            />
+            <select class="input-temp-unit" name="input-temp-unit">
+              <option>°C</option>
+              <option>°F</option>
+              <option>°K</option>
+            </select>
+          </div>
+
+          <label class="label-convert-to">Convert To</label>
+          <select class="convert-to-unit">
+            <option>Celsius °C</option>
+            <option>Fahrenheit °F</option>
+            <option>Kelvin °K</option>
+          </select>
+
+          <button class="btn-submit">Convert &rarr;</button>
+        </form>
+        <div class="result"></div>
+      </div>
+      <div class="images">
+        <img
+          class="image-1"
+          src="img/thermometer-1.png"
+          alt="Thermometer image"
+        />
+        <img
+          class="image-2"
+          src="img/thermometer-2.png"
+          alt="Thermometer image"
+        />
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
